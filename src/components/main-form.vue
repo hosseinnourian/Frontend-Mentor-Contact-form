@@ -17,7 +17,17 @@
                 <input type="text">
             </div>
         </div>
+        <div class="query-holder">
+            <div class="query-input-holder">
+                <input type="radio" id="one" value="One" />
+                <label class="radio-label" for="one">General Enquiry</label>
+            </div>
 
+            <div class="query-input-holder">
+                <input type="radio" id="two" value="Two" />
+                <label class="radio-label" for="two">Support Request</label>
+            </div>
+        </div>
     </div>
     <div>
 
@@ -38,7 +48,7 @@ import mainTitle from './main-title.vue';
     border-radius: 18px;
 }
 
-input {
+input[type="text"] {
     display: block;
     background-color: rgb(226, 230, 233);
     border-radius: 5px;
@@ -46,9 +56,18 @@ input {
     width: 100%;
 
 }
-.name-input-holder {
-    width: 40%;
+
+
+
+label {
+    margin: 10px 10px;
+    display: block;
 }
+
+.radio-label {
+    display: inline;
+}
+
 .name-holder {
     padding: 20px;
     width: 90%;
@@ -58,15 +77,37 @@ input {
     align-items: center;
 
 }
-.email-input-holder {
-    width: 90%;
-    margin: 0 auto;
+
+.name-input-holder {
+    width: 40%;
 }
+
 .email-holder {
     padding: 20px;
     width: 90%;
     margin: 10px auto;
-    
+
+}
+
+.email-input-holder {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.query-holder {
+
+    padding: 20px;
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.query-input-holder{
+    border: 1px solid rgb(69, 69, 69);
+    width: 40%;
+    padding: 20px;
+    border-radius: 5px;
 }
 </style>
 
