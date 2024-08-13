@@ -29,8 +29,14 @@
             </div>
         </div>
         <div class="message-holder">
+            <span class="message-holder-span">Message</span>
             <textarea class="message-text-holder" name="" id=""></textarea>
         </div>
+        <div class="consent-holder">
+            <input class="consent-holder-input" type="checkbox" id="checkbox" />
+            <span class="consent-holder-span">I consent to being contacted by team</span>
+        </div>
+        <button class="submit-btn">submit</button>
     </div>
     <div>
 
@@ -49,6 +55,7 @@ import mainTitle from './main-title.vue';
     margin: 50px auto;
     background-color: rgb(226, 230, 233);
     border-radius: 18px;
+    padding: 20px 0;
 }
 
 input[type="text"] {
@@ -126,6 +133,34 @@ label {
     width: 90%;
     margin: 10px auto;
     padding: 50px 0;
+}
+
+.message-holder-span {
+    padding: 20px;
+    margin: 20px;
+}
+
+.consent-holder {
+    width: 83%;
+    margin: 30px auto;
+    padding: 30px 0;
+}
+.consent-holder-span{
+    margin: 5px;
+}
+.consent-holder-input{
+    margin: 5px;
+}
+.submit-btn{
+    display: block;
+    width: 84%;
+    margin: 10px auto;
+    border: none;
+    background-color: rgb(81, 160, 111);
+    padding: 20px 0;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
 }
 </style>
 
