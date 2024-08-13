@@ -28,6 +28,9 @@
                 <label class="radio-label" for="two">Support Request</label>
             </div>
         </div>
+        <div class="message-holder">
+            <textarea class="message-text-holder" name="" id=""></textarea>
+        </div>
     </div>
     <div>
 
@@ -103,11 +106,26 @@ label {
     justify-content: space-around;
     align-items: center;
 }
-.query-input-holder{
+
+.query-input-holder {
     border: 1px solid rgb(69, 69, 69);
     width: 40%;
     padding: 20px;
     border-radius: 5px;
+}
+
+.message-holder {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.message-text-holder {
+    background-color: rgb(226, 230, 233);
+    border-radius: 5px;
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 50px 0;
 }
 </style>
 
